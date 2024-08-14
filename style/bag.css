@@ -17,9 +17,10 @@ font-family: "Bebas Neue", sans-serif;
 
 :root{
     --primary-color: rgb(164, 188, 70);
-    --secondary-color: rgb(250, 190, 76);
+    --secondary-color: rgb(118, 194, 126);
     --p-color:rgb(62, 62, 62);
     --dark-color: rgb(54, 57, 88);
+    --background-color: rgb(255, 249, 244);
 }
 
 /* 
@@ -41,7 +42,7 @@ p{
     border: none;
     color: white;
     border-radius: 6px;
-    background: linear-gradient(180.00deg, rgb(164, 188, 70),rgb(133, 160, 25) 100%);
+    background: rgb(42, 30, 89);
     padding: 13px 20px;
     text-transform: uppercase;
     display: flex;
@@ -54,12 +55,16 @@ p{
     font-size: 1.2rem;
 }
 
+.main{
+    padding-bottom: 40px;
+}
+
 /* 
 --------- Header Section --------------
 */
 .header{
     width: 100%;
-    background-color: rgb(255, 251, 240);
+    background-color: var(--background-color);
 }
 
 .navbar{
@@ -112,7 +117,7 @@ p{
     height: 600px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 0px;
 }
 
 .hero-content{
@@ -146,8 +151,8 @@ p{
 }
 
 .hero-img .img-div{
-    margin-top: -40%;
-    width: 80%;
+    margin-top: -10%;
+    width: 90%;
 }
 
 .hero-img .img-div img{
@@ -188,10 +193,23 @@ p{
     border-radius: 16px;
 }
 
+.product-item-2 .img-div{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    background-color: white;
+}
+
 .product-item .img-div img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.product-item-2 .img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-item h3{
@@ -225,7 +243,7 @@ p{
 .service-section{
     display: flex;
     gap: 20px;
-    padding: 60px 30px 80px;
+    padding: 60px 30px 40px;
 }
 
 .service-content,
@@ -312,10 +330,11 @@ p{
 
     .hero-section{
         height: auto;
+        gap: 50px;
     }
 
     .hero-img .img-div{
-        margin-top: -20%;
+        margin: -5% auto 0;
         width: 70%;
     }
 
@@ -337,7 +356,6 @@ p{
 @media screen and (max-width: 600px) {
     
     .hero-img .img-div{
-        margin-top: -20%;
         width: 100%;
     }
 
