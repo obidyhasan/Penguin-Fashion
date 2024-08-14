@@ -217,3 +217,66 @@ p{
 .item-div .button{
     padding: 10px 15px;
 }
+
+
+/* 
+-------------------- Service Section ----------------
+*/
+.service-section{
+    display: flex;
+    gap: 20px;
+    padding: 60px 30px 80px;
+}
+
+.service-content,
+.service-img{
+    width: 50%;
+}
+
+.service-item{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.service-item .img-div{
+    width: 80px;
+}
+
+.service-item .img-div img{
+    width: 100%;
+}
+
+.service-item div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.service-item h4{
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
+
+.service-item p{
+    margin-top: 10px;
+    font-size: .9rem;
+    max-width: 250px;
+}
+
+.service-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-img img{
+    width: 100%;
+}
